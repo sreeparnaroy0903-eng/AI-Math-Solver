@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Math Solver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧮 AI Math Solver</h1>
+    <p class="caption">Solve derivatives, integrals, matrices, equations & more with step-by-step explanations!</p>
+
+    <!-- Main Dropdown -->
+    <div class="dropdown-container">
+      <label for="problemType">Pick Math Task:</label>
+      <select id="problemType">
+        <option value="">-- Select Task --</option>
+        <option value="derivative">Derivative</option>
+        <option value="integral">Integration</option>
+        <option value="simplify">Simplify Expression</option>
+        <option value="solve_quadratic">Quadratic Equation</option>
+        <option value="solve_linear">Linear Equation</option>
+        <option value="arithmetic">Arithmetic</option>
+        <option value="percentage">Percentage</option>
+        <option value="matrix">Matrix</option>
+      </select>
+    </div>
+
+    <!-- Dynamic Inputs -->
+    <div id="dynamicInputs" class="inputs"></div>
+
+    <button id="solveButton">Solve</button>
+
+    <h2>Step-by-Step Solution:</h2>
+    <div id="stepsContainer" class="steps"></div>
+
+    <h2>Result:</h2>
+    <div id="resultContainer" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
